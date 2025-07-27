@@ -3,8 +3,8 @@ import AsyncStorage from "@react-native-async-storage/async-storage";
 import { createClient } from "@supabase/supabase-js";
 import "react-native-url-polyfill/auto";
 
-const supabaseURL = config.SUPABASE_URL,
-  supabaseAnonKey = config.SUPABSE_API_KEY;
+const supabaseURL = config.SUPABASE_URL;
+const supabaseAnonKey = config.SUPABSE_API_KEY;
 
 if (!supabaseURL || !supabaseAnonKey)
   throw Error(`Missing SUPABASE API keys, ${supabaseURL}, ${supabaseAnonKey}`);
