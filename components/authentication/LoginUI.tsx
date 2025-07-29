@@ -15,9 +15,10 @@ const LoginUI = () => {
       email: email ?? "",
       password: password ?? "",
     });
+    setLoading(false);
     if (error)
       Alert.alert(`Error with Logging In: ${email} ${password} ${error}`);
-    setLoading(false);
+    else router.push("/(tabs)/home");
   };
 
   return (
